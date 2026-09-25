@@ -1,0 +1,8 @@
+{
+  "name": "Hotel Management System",
+  "description": "Comprehensive hotel management system for room bookings, guest management, and checkout billing.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
