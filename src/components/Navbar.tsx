@@ -1,7 +1,7 @@
 import React from 'react';
-import { Hotel, BedDouble, CalendarPlus, LogOut, Users, Receipt, Terminal, Plus } from 'lucide-react';
+import { Hotel, BedDouble, CalendarPlus, LogOut, Users, Receipt, Terminal, Plus, FileText } from 'lucide-react';
 
-export type TabType = 'rooms' | 'book' | 'checkout' | 'bookings' | 'history' | 'terminal';
+export type TabType = 'rooms' | 'book' | 'checkout' | 'bookings' | 'history' | 'terminal' | 'report';
 
 interface NavbarProps {
   activeTab: TabType;
@@ -27,6 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'bookings', label: 'Active Bookings', icon: <Users className="w-4 h-4" />, badge: activeBookingsCount },
     { id: 'history', label: 'Billing Records', icon: <Receipt className="w-4 h-4" /> },
     { id: 'terminal', label: 'Original Java CLI', icon: <Terminal className="w-4 h-4" /> },
+    { id: 'report', label: 'Project Report & Submission', icon: <FileText className="w-4 h-4" /> },
   ];
 
   return (

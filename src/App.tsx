@@ -9,6 +9,7 @@ import { BillingHistory } from './components/BillingHistory';
 import { BillReceiptModal } from './components/BillReceiptModal';
 import { AddRoomModal } from './components/AddRoomModal';
 import { TerminalView } from './components/TerminalView';
+import { ProjectReportView } from './components/ProjectReportView';
 import { INITIAL_ROOMS, INITIAL_CUSTOMERS, INITIAL_RECEIPTS } from './data/initialData';
 import { Room, Customer, BillReceipt } from './types/hotel';
 import { CheckCircle2, AlertCircle } from 'lucide-react';
@@ -373,6 +374,8 @@ export default function App() {
             onCheckoutRoom={(roomNumber) => handleConfirmCheckout(roomNumber)}
           />
         )}
+
+        {activeTab === 'report' && <ProjectReportView />}
       </main>
 
       {/* Modals */}
